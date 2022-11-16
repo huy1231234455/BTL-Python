@@ -1,4 +1,5 @@
 import simplified_pygame
+#set màu mặc định
 DEFAULT_COLORS={
     'background':[230,230,230],
     'well':[255,255,255],
@@ -9,6 +10,7 @@ DEFAULT_COLORS={
     's':[183,157,25],
     'r':[0,150,150],
     'T':[175,51,165]}
+#set màu giao diện van_gogh
 VAN_GOGH_COLORS={
     'background':[110,130,140],
     'well':[32,43,51],
@@ -19,6 +21,7 @@ VAN_GOGH_COLORS={
     's':[140,104,14],
     'r':[179,170,123],
     'T':[175,187,181]}
+#set màu giao diện millais
 MILLAIS_COLORS={
     'background':[100,130,80],
     'well':[59,29,12],
@@ -29,6 +32,7 @@ MILLAIS_COLORS={
     's':[129,137,44],
     'r':[228,186,145],
     'T':[153,121,66]}
+#set màu giao diện leonardo
 LEONARDO_COLORS={
     'background':[110,120,80],
     'well':[169,171,137],
@@ -39,6 +43,7 @@ LEONARDO_COLORS={
     's':[140,104,14],
     'r':[216,174,88],
     'T':[63,10,45]}
+#set màu giao diện mondrian
 MONDRIAN_COLORS={
     'background': [230, 230, 230],
     'well': [249, 249, 249],
@@ -49,7 +54,7 @@ MONDRIAN_COLORS={
     's': [224, 194, 22],
     'r': [155, 155, 160],
     'T': [190, 13, 123]}
-
+#set màu giao diện klimt
 KLIMT_COLORS={
     'background':[200,160,100],
     'well':[153,100,17],
@@ -60,6 +65,7 @@ KLIMT_COLORS={
     's':[215,120,106],
     'r':[239,215,192],
     'T':[111,77,147]}
+# set saved setting
 SAVED_SETTINGS=simplified_pygame.DataFile(
     'settings',
     w=1200,
@@ -75,6 +81,7 @@ SAVED_SETTINGS=simplified_pygame.DataFile(
     letters=simplified_pygame.WASD_AS_ARROWS,
     randomness='fair random',
 )
+#set giao diện mới đã chọn
 ACTIVE_SETTINGS = {'color_scheme': {}}
 ACTIVE_SETTINGS['color_scheme'].update(SAVED_SETTINGS['color_scheme'])
 ACTIVE_SETTINGS['bleed'] = SAVED_SETTINGS['bleed']
